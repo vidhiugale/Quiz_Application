@@ -5,6 +5,7 @@ The  Quiz Application is a web-based project built using HTML, CSS, and JavaScri
 HTML – to structure the quiz pages (welcome screen, questions, result page).
 CSS – to style the layout, buttons, colors, and overall UI.
 JavaScript – to handle question display, timer, answer selection, score calculation on the client side, and sending/receiving data from the backend.
+
 🛠️ Backend (Server-Side Logic):
 Java – to manage question data, validate answers, process scores, and communicate with the frontend.
 
