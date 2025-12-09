@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to QuizGrad</h1>
+       
+
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" placeholder="Enter your name">
+
+        <label for="category">Select Category:</label>
+        <select id="category">
+            <option value="general">General Knowledge</option>
+            <option value="math">Mathematical Questions</option>
+             <option value="Java">Java Programming</option>
+            <option value="science">Science</option>
+             <option value="literature">Literature</option>
+        </select>
+
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <script>
+        function startQuiz() {
+            const username = document.getElementById("username").value.trim();
+            const category = document.getElementById("category").value;
+
+            if (!username) {
+                alert("Please enter your name!");
+                return;
+            }
+
+            // Redirect to quiz.html with URL parameters
+            window.location.href = `quiz.html?username=${encodeURIComponent(username)}&category=${encodeURIComponent(category)}`;
+        }
+    </script>
+</body>
+</html>

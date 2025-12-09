@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://i.pinimg.com/736x/29/bc/4f/29bc4f12812ed80053139d024156725d.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Quiz Container */
+#quiz-screen, #result-screen {
+    width: 90%;
+    max-width: 750px;
+    background: #ffffffdd;
+    backdrop-filter: blur(6px);
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Header Title */
+#greeting {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4b3bbd;
+    margin-bottom: 15px;
+}
+
+/* Timer */
+#timer {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ff4f4f;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Question Block */
+.question-block {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 14px;
+    border: 2px solid #e0dfff;
+    transition: 0.3s ease;
+}
+
+.question-block:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Question text */
+.question-block h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3b3b98;
+    margin-bottom: 18px;
+}
+
+/* Option styling */
+.question-block div input[type="radio"] {
+    display: none;
+}
+
+.question-block label {
+    display: block;
+    background: #f4f5ff;
+    padding: 14px;
+    border-radius: 12px;
+    border: 2px solid #dcdcff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+}
+
+label:hover {
+    background: #e7ebff;
+    border-color: #867bff;
+}
+
+input[type="radio"]:checked + label {
+    background: #d9d5ff;
+    border-color: #4b3bbd;
+    color: #222;
+    font-weight: 600;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 8px;
+    color: white;
+    background: #5145ff;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #3229cc;
+}
+
+button:disabled {
+    background: #b5b5b5;
+    cursor: not-allowed;
+}
+
+/* Result styling */
+#result h2 {
+    text-align: center;
+    color: #4b3bbd;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#result div {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 6px solid #4b3bbd;
+    margin-bottom: 15px;
+}
+
+#result h3 {
+    text-align: center;
+    color: #3229cc;
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
